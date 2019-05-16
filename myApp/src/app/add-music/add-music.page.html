@@ -7,19 +7,24 @@
 <ion-content>
     <form (ngSubmit)="onSubmit()">
         <ion-item lines="none">
-            <ion-label>Artist</ion-label>
+            <ion-label>Artist :</ion-label>
+            <ion-input color="primary" clearInput value="artist"></ion-input>
         </ion-item>
         <ion-item lines="none">
-            <ion-label>Title</ion-label>
+            <ion-label>Title :</ion-label>
+            <ion-input color="primary" clearInput value="title"></ion-input>
         </ion-item>
         <ion-item lines="none">
-            <ion-label>Genre</ion-label>
+            <ion-label>Genre :</ion-label>
+            <ion-input color="primary" clearInput value="genre"></ion-input>
         </ion-item>
         <ion-item lines="none">
-            <ion-label>Time</ion-label>
+            <ion-label>Duration :</ion-label>
+            <ion-input color="primary" clearInput value="duration"></ion-input>
         </ion-item>
         <ion-item lines="none">
-            <ion-label>Release date</ion-label>
+            <ion-label>Release date :</ion-label>
+            <ion-input color="primary" clearInput value="date"></ion-input>
         </ion-item>
         <ion-button type="submit" fill="solid" color="primary">Add Music</ion-button>
     </form>

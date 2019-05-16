@@ -7,13 +7,16 @@
 <ion-content>
     <form (ngSubmit)="onSubmit()">
         <ion-item lines="none">
-            <ion-label>Name</ion-label>
+            <ion-label>Name :</ion-label>
+            <ion-input color="primary" clearInput value="name"></ion-input>
         </ion-item>
         <ion-item lines="none">
-            <ion-label>Genre</ion-label>
+            <ion-label>Genre :</ion-label>
+            <ion-input color="primary" clearInput value="genre"></ion-input>
         </ion-item>
         <ion-item lines="none">
-            <ion-label>Birthdate</ion-label>
+            <ion-label>Birthdate :</ion-label>
+            <ion-input color="primary" clearInput value="date"></ion-input>
         </ion-item>
         <ion-button type="submit" fill="solid" color="primary">Add Artist</ion-button>
     </form>
