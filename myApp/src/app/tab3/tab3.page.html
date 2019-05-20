@@ -7,11 +7,11 @@
 </ion-header>
 
 <ion-content>
-    <ion-card>
-        
+    <ion-card *ngFor="let artist of artists">
+
         <ion-card-header>
-            <ion-card-subtitle>Genre</ion-card-subtitle>
-            <ion-card-title>Name</ion-card-title>
+            <ion-card-subtitle>{{ artist.genre }}</ion-card-subtitle>
+            <ion-card-title>{{ artist.name }}</ion-card-title>
         </ion-card-header>
 
         <ion-card-content>
@@ -21,7 +21,7 @@
                         <ion-label>Birthdate</ion-label>
                     </ion-col>
                     <ion-col>
-                        <ion-label>xxx</ion-label>
+                        <ion-label>{{ artist.birthdate }}</ion-label>
                     </ion-col>
                 </ion-row>
             </ion-grid>
