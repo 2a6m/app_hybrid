@@ -15,4 +15,8 @@ export class Tab3Page implements OnInit {
     ngOnInit() {
         this.artists = this.artistservice.getArtists();
     }
+
+    delete(artist: Artist) {
+        this.artistservice.deleteArtist(artist);
+    }
 }

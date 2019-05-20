@@ -16,7 +16,9 @@ export class MusicService {
         return this.musics;
     }
 
-    deleteMusic(id) {
+    deleteMusic(music: Music) {
+        var idx = this.musics.indexOf(music);
+        this.musics.splice(idx, 1);
         return ;
     }
 

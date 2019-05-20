@@ -15,4 +15,8 @@ export class Tab2Page implements OnInit {
     ngOnInit() {
         this.musics = this.musicservice.getMusics();
     }
+
+    delete(music: Music) {
+        this.musicservice.deleteMusic(music);
+    }
 }

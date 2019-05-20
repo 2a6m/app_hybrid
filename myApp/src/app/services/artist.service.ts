@@ -16,7 +16,9 @@ export class ArtistService {
         return this.artists;
     }
 
-    deleteArtist(id) {
+    deleteArtist(artist: Artist) {
+        var idx = this.artists.indexOf(artist);
+        this.artists.splice(idx, 1);
         return ;
     }
 
