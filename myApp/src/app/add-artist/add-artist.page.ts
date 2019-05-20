@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Artist } from '../artist';
+import { ArtistService } from '../services/artist.service';
 
 @Component({
   selector: 'app-add-artist',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-artist.page.scss'],
 })
 export class AddArtistPage implements OnInit {
+    newArtist: Artist;
 
-  constructor() { }
+  constructor(private artistservice: ArtistService) {
+      this.newArtist = new Artist();
+  }
 
   ngOnInit() {
   }
 
+  onSubmit() {
+      this.artistservice.createArtist(this.newArtist);
+  }
 }

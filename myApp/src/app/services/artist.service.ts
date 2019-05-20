@@ -23,6 +23,7 @@ export class ArtistService {
     }
 
     createArtist(artist: Artist) {
+        this.artists.push(artist);
         return ;
     }
 
