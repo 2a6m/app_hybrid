@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Artist } from '../artist';
 import { ArtistService } from '../services/artist.service';
-import { ARTISTS } from '../mock-artists'
 
 @Component({
   selector: 'app-tab3',
@@ -15,6 +14,5 @@ export class Tab3Page implements OnInit {
 
     ngOnInit() {
         this.artists = this.artistservice.getArtists();
-        //this.artists = ARTISTS;
     }
 }

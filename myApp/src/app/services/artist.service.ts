@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Artist } from '../artist';
-import { ARTISTS } from '../mock-artists'
+import { ARTISTS } from '../mock-artists';
 
 @Injectable({
   providedIn: 'root'
@@ -28,7 +28,7 @@ export class ArtistService {
         return ;
     }
 
-    loadArtists(){
+    loadArtists() {
         this.artists = ARTISTS;
         return;
     }
