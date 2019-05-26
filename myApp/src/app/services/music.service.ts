@@ -23,6 +23,7 @@ export class MusicService {
     }
 
     createMusic(music: Music) {
+        this.musics.push(music);
         return ;
     }
 
