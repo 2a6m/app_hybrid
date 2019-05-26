@@ -41,7 +41,7 @@
                     </ion-col>
                 </ion-row>
             </ion-grid>
-            <ion-button fill="solid" color="primary" size="default"><ion-icon name="settings"></ion-icon></ion-button>
+            <ion-button fill="solid" color="primary" size="default" [routerLink]="['update/', music.id]"><ion-icon name="settings"></ion-icon></ion-button>
             <ion-button fill="solid" color="danger" size="default" (click)="delete(music)"><ion-icon name="trash"></ion-icon></ion-button>
         </ion-card-content>
 
