@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>update-artist</ion-title>
+    <ion-title>Update {{ artist.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <form (ngSubmit)="onSubmit()">
+        <ion-item lines="none">
+            <ion-label>Name :</ion-label>
+            <ion-input type="text" [(ngModel)]="artist.name" name="name" color="primary" clearInput value="{{ artist.name }}"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label>Genre :</ion-label>
+            <ion-input type="text" [(ngModel)]="artist.genre" name="genre" color="primary" clearInput value="{{ artist.genre }}"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label>Birthdate :</ion-label>
+            <ion-input type="text" [(ngModel)]="artist.birthdate" name="birthdate" color="primary" clearInput value="{{ artist.birthdate }}"></ion-input>
+        </ion-item>
+        <ion-button type="submit" fill="solid" color="primary">Update Artist</ion-button>
+        <ion-button fill="solid" color="danger" routerLink=''>Cancel</ion-button>
+    </form>
 </ion-content>
