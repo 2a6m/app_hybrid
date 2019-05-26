@@ -30,7 +30,11 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab2/tab2.module#Tab2PageModule'
-          }
+        },
+        {
+            path: 'update/:id',
+            loadChildren: '../update-music/update-music.module#UpdateMusicPageModule'
+        }
         ]
       },
       {
@@ -39,7 +43,11 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab3/tab3.module#Tab3PageModule'
-          }
+        },
+        {
+            path: 'update/:id',
+            loadChildren: '../update-artist/update-artist.module#UpdateArtistPageModule'
+        }
         ]
       },
       {
