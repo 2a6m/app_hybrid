@@ -22,6 +22,7 @@ export class AddMusicPage implements OnInit {
   }
 
   onSubmit() {
+      console.log(this.newMusic);
       this.musicservice.createMusic(this.newMusic);
   }
 

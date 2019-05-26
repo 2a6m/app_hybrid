@@ -31,6 +31,15 @@ export class MusicService {
         return ;
     }
 
+    getMusic(id: Number): Music {
+        let findmusic: Music;
+        this.musics.forEach(music => {
+            if (music.id === id) {
+                findmusic = music;
+        }});
+        return findmusic;
+    }
+
     loadMusics() {
         this.musics = MUSICS;
         return;
