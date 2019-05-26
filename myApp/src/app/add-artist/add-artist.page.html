@@ -8,15 +8,15 @@
     <form (ngSubmit)="onSubmit()">
         <ion-item lines="none">
             <ion-label>Name :</ion-label>
-            <ion-input type="text" [(ngModel)]="newArtist.name" name="name" color="primary" clearInput value="name"></ion-input>
+            <ion-input type="text" [(ngModel)]="newArtist.name" name="name" clearInput placeholder="name"></ion-input>
         </ion-item>
         <ion-item lines="none">
             <ion-label>Genre :</ion-label>
-            <ion-input type="text" [(ngModel)]="newArtist.genre" name="genre" color="primary" clearInput value="genre"></ion-input>
+            <ion-input type="text" [(ngModel)]="newArtist.genre" name="genre" clearInput placeholder="genre"></ion-input>
         </ion-item>
         <ion-item lines="none">
             <ion-label>Birthdate :</ion-label>
-            <ion-input type="text" [(ngModel)]="newArtist.birthdate" name="birthdate" color="primary" clearInput value="date"></ion-input>
+            <ion-input type="text" [(ngModel)]="newArtist.birthdate" name="birthdate" clearInput placeholder="date"></ion-input>
         </ion-item>
         <ion-button type="submit" fill="solid" color="primary">Add Artist</ion-button>
         <ion-button type="submit" fill="solid" color="danger" routerLink=''>Cancel</ion-button>
