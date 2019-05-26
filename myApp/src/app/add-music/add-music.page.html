@@ -8,24 +8,28 @@
     <form (ngSubmit)="onSubmit()">
         <ion-item lines="none">
             <ion-label>Artist :</ion-label>
-            <ion-input color="primary" clearInput value="artist"></ion-input>
+            <ion-select [(ngModel)]="newMusic.artist">
+                <ion-select-option *ngFor="let artist of artists" [value]="artist">{{ artist.name }}</ion-select-option>
+            </ion-select>
+            <!--<ion-input type="text" [(ngModel)]="newMusic.artist" name="artist" color="primary" clearInput value="artist"></ion-input>-->
         </ion-item>
         <ion-item lines="none">
             <ion-label>Title :</ion-label>
-            <ion-input color="primary" clearInput value="title"></ion-input>
+            <ion-input type="text" [(ngModel)]="newMusic.title" name="title" color="primary" clearInput value="title"></ion-input>
         </ion-item>
         <ion-item lines="none">
             <ion-label>Genre :</ion-label>
-            <ion-input color="primary" clearInput value="genre"></ion-input>
+            <ion-input type="text" [(ngModel)]="newMusic.genre" name="genre" color="primary" clearInput value="genre"></ion-input>
         </ion-item>
         <ion-item lines="none">
             <ion-label>Duration :</ion-label>
-            <ion-input color="primary" clearInput value="duration"></ion-input>
+            <ion-input type="text" [(ngModel)]="newMusic.duration" name="duration" color="primary" clearInput value="duration"></ion-input>
         </ion-item>
         <ion-item lines="none">
             <ion-label>Release date :</ion-label>
-            <ion-input color="primary" clearInput value="date"></ion-input>
+            <ion-input type="text" [(ngModel)]="newMusic.date" name="date" color="primary" clearInput value="date"></ion-input>
         </ion-item>
         <ion-button type="submit" fill="solid" color="primary">Add Music</ion-button>
+        <ion-button fill="solid" color="danger" routerLink=''>Cancel</ion-button>
     </form>
 </ion-content>
