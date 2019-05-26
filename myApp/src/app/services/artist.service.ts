@@ -31,6 +31,15 @@ export class ArtistService {
         return ;
     }
 
+    getArtist(id: Number): Artist {
+        let findartist: Artist;
+        this.artists.forEach(artist => {
+            if (artist.id === id) {
+                findartist = artist;
+        }});
+        return findartist;
+    }
+
     loadArtists() {
         this.artists = ARTISTS;
         return;
