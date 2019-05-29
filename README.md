@@ -1,5 +1,5 @@
 # app_hybrid
-ECAM project
+ECAM project to try ionic and develop an app for mobile
 
 ## run compilator
 
